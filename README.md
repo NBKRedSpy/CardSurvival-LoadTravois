@@ -19,7 +19,7 @@ The mod can be configured to only load certain items.  See [Settings](#settings)
 
 A list of HotKey names can be found here: https://docs.unity3d.com/ScriptReference/KeyCode.html.  However, it is easier to use the configuration manager mod which provides an in game configuration UI (see [Using Configuration Manager](#using-configuration-manager) below)
 
-A list of card names for the CardMoveListConfig setting can be found at https://github.com/NBKRedSpy/CardSurvival-DoNotSteal/blob/master/CardList.txt|
+A list of card names for the CardMoveListConfig setting can be found at https://github.com/NBKRedSpy/CardSurvival-DoNotSteal/blob/master/CardList.txt
 
 
 # Changing the Configuration
