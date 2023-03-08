@@ -23,15 +23,21 @@ namespace LoadTravois
         {
              if (Plugin.HotKey.Value.IsPressed() && !GraphicsManager.Instance.HasPopup)
             {
+                CardData currentEnvironment = GameManager.Instance.CurrentEnvironment;
+
                 //Find a Travois
-                InGameCardBase travois = __instance.ItemCards.SingleOrDefault(x => x.CardName() == "Travois");
+                InGameCardBase travois = __instance.ItemCards.SingleOrDefault(x => x.CardName() == "Travois" && x.Environment == currentEnvironment);
+                
                 if (travois == null)
                 {
                     return;
                 }
 
+                List<InGameCardBase> environmentCards = __instance.ItemCards
+                    .Where(x => x.Environment == currentEnvironment).ToList();
+
                 var containers = Plugin.CardMoveList
-                    .Join(__instance.ItemCards, filter => filter.Value,
+                    .Join(environmentCards , filter => filter.Value,
                         card => card.CardName(), (containerFilter, card) => new { containerFilter, card})
                     .Where(x => x.card.CurrentContainer?.CardName() != "Travois" )
                     .OrderBy(x => x.containerFilter.Key)

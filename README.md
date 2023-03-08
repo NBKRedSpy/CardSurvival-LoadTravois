@@ -92,6 +92,9 @@ Safe to add and remove from existing saves.
 
 # Change Log 
 
+## 1.1.0
+* Corrected container search not being limited to the current environment.
+
 ## 1.0.0
 * Release
 
