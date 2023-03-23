@@ -1,9 +1,6 @@
 
 ![Alt text](media/TravoisLoad.png)
 
-# v1.04 Note
-This is only compatible with the 1.04 beta called "updatebranch" in Steam.
-
 # Load Travois
 This mod provides a hotkey to automatically load all available sacks and baskets onto a travois.  This avoids needing to load each container individually.
 
