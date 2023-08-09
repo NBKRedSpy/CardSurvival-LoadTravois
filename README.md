@@ -93,7 +93,7 @@ Safe to add and remove from existing saves.
 * Fixes load failing if there is more than one Travois in the current environment.
 
 ## 1.1.1
-* Fixes mod not working for non English languages.  Thank you to CialloAlone for creating the fix.
+* Fixes mod not working for non English languages.  Thank you to CialloAlone for finding and fixing this issue.
 
 ## 1.1.0
 * Corrected container search not being limited to the current environment.
