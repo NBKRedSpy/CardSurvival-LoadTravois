@@ -33,10 +33,10 @@ namespace LoadTravois
                     return;
                 }
 
-                var environmentCards = __instance.ItemCards
+				List<InGameCardBase> environmentCards = __instance.ItemCards
                     .Where(x => x.Environment == currentEnvironment).ToList();
 
-                var containers = Plugin.CardMoveList
+				List<InGameCardBase> containers = Plugin.CardMoveList
                     .Join(environmentCards, filter => filter.Value,
                         card => card.CardModel.CardName.DefaultText, (containerFilter, card) => new {containerFilter, card})
                     .Where(x => x.card.CurrentContainer?.CardModel.CardName.DefaultText != "Travois")

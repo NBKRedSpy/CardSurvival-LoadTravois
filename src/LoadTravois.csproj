@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <AssemblyName>LoadTravois</AssemblyName>
-    <Description>My first plugin</Description>
-    <Version>1.1.0</Version>
+    <Description>Automatically loads containers onto Travois</Description>
+    <Version>1.1.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
