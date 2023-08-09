@@ -25,7 +25,8 @@ namespace LoadTravois
                 CardData currentEnvironment = GameManager.Instance.CurrentEnvironment;
 
                 //Find a Travois
-                InGameCardBase travois = __instance.ItemCards.SingleOrDefault(x =>
+                //If there are multiple, only use the first one found.
+                InGameCardBase travois = __instance.ItemCards.FirstOrDefault(x =>
                     x.CardModel.CardName.DefaultText == "Travois" && x.Environment == currentEnvironment);
                 
                 if (travois == null)

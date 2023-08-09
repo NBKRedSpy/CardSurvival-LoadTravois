@@ -88,6 +88,10 @@ Safe to add and remove from existing saves.
 <a href="https://www.flaticon.com/free-icons/thumbs-down" title="thumbs down icons">Thumbs down icons created by Freepik - Flaticon</a>
 
 # Change Log 
+
+## 1.1.2
+* Fixes load failing if there is more than one Travois in the current environment.
+
 ## 1.1.1
 * Fixes mod not working for non English languages.  Thank you to CialloAlone for creating the fix.
 
